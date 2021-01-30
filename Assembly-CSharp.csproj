@@ -42,9 +42,7 @@
      <Compile Include="Assets\Scripts\LevelManagerScript.cs" />
      <Compile Include="Assets\Scripts\LocatorController.cs" />
      <Compile Include="Assets\Scripts\MamaController.cs" />
-     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\Scripts\PlayerShoot.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PopUpScript.cs" />
      <Compile Include="Assets\Scripts\SphereDialogue.cs" />
      <Compile Include="Assets\Scripts\TunaDialogue.cs" />
