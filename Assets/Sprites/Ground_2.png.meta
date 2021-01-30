@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 09247847dba42d84f8571f7470f45b1a
+=======
+guid: 083f5ba63f2bb69449fc66dca57a7547
+>>>>>>> feature/npcs_animations
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
