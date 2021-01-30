@@ -5,8 +5,12 @@ using UnityEngine;
 public class MamaController : MonoBehaviour
 {
 
-    public GameObject winText;
+    private GameObject winText;
     
+    void Start() {
+        winText = GameObject.FindGameObjectWithTag("WinText");
+        winText.SetActive(false);
+    }
     void OnTriggerEnter2D(Collider2D c) {
         if (c.gameObject.tag == "Player") {
             winText.SetActive(true);

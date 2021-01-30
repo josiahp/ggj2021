@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5036648274837094621}
   m_Layer: 0
   m_Name: Mama
-  m_TagString: Player
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,4 +133,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3937f1801b0cb2e4a92bd3d6479cfc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winText: {fileID: 0}
+  winText: {fileID: 7297128388863836941, guid: 385b9e0b62cbb564889426907a7f5520, type: 3}

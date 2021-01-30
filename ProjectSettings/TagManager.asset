@@ -9,6 +9,10 @@ TagManager:
   - Enemy
   - NPC
   - PowerUp
+  - NPCSpawnPoint
+  - Mama
+  - MomSpawnPoint
+  - WinText
   layers:
   - Default
   - TransparentFX
