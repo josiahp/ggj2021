@@ -105,4 +105,10 @@ public float Distance;
         Vector2 movement = new Vector2(mx * movementSpeed, my * movementSpeed);
         rb.velocity = movement;
     }
+
+    void OnTriggerEnter2D(Collider2D c) {
+        if (c.gameObject.tag == "PowerUp") {
+            VoiceController.RecoverVoice();
+        }
+    }
 }
