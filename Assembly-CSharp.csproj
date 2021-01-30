@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\PopUpScript.cs" />
      <Compile Include="Assets\Scripts\SphereDialogue.cs" />
      <Compile Include="Assets\Scripts\TunaDialogue.cs" />
+     <Compile Include="Assets\Scripts\VoiceNoteController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
