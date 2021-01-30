@@ -270,7 +270,7 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0.32, y: 1.9499999, z: 0.96, w: 1.4699999}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 5, y: 5}
     newSize: {x: 1, y: 1}
@@ -358,6 +358,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4096
   ping: {fileID: 7093363401470430871}
+  pingSprite: {fileID: 0}
+  pingDuration: 0.75
 --- !u!1 &7093363401470430871
 GameObject:
   m_ObjectHideFlags: 0
