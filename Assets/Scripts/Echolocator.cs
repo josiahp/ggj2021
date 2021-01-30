@@ -12,7 +12,7 @@ public class Echolocator : MonoBehaviour
     public Collider2D cameraCollider;
     public LayerMask layer;
 
-    private Transform cam;
+    private Camera cam;
 
     public GameObject ping;
     public SpriteRenderer pingSprite;
@@ -21,7 +21,7 @@ public class Echolocator : MonoBehaviour
 
     public void Start()
     {
-        cam = Camera.main.transform;
+        cam = Camera.main;
         pingSprite = ping.GetComponent<SpriteRenderer>();
         ping.SetActive(false);
     }
@@ -48,7 +48,10 @@ public class Echolocator : MonoBehaviour
         GameObject[] NPCs = GameObject.FindGameObjectsWithTag(lookFor);
         foreach (GameObject NPC in NPCs)
         {
-            if (Vector3.Distance(this.transform.position, NPC.transform.position) < Distance)
+            Vector2 vpPos = cam.WorldToViewportPoint(NPC.transform.position);
+            Debug.Log(vpPos);
+            if ((vpPos.x <= 0 || vpPos.x >= 1 || vpPos.y <= 0 || vpPos.y >= 1) &&
+                Vector3.Distance(this.transform.position, NPC.transform.position) < Distance)
             {
                 PingBack(NPC);
             }

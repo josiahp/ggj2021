@@ -18,6 +18,7 @@ public class LocatorController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         remainingSeconds = secondsToLive;
+        updatePosition();
     }
 
     // Update is called once per frame
@@ -39,25 +40,35 @@ public class LocatorController : MonoBehaviour
 
     void updatePosition() {
 
+        // Calculate the angle of rotation for the sprite
         Transform parent = gameObject.transform.parent;
         Vector2 direction = parent.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
         Vector2 screenPos = Camera.main.WorldToViewportPoint(parent.position);
 
-        if(screenPos.x >= 0f && screenPos.x <= 1f && screenPos.y >= 0f && screenPos.y <= 1f){
+        // If the parent is onscreen there is no reason to bother with finding the right screen position
+        if(screenPos.x >= 0f && screenPos.x <= 1f && screenPos.y >= 0f && screenPos.y <= 1f) {
             return;
         }
 
+        // normalize the screen coordinates to between -1 and 1
         Vector2 onScreenPos = new Vector2(screenPos.x - 0.5f, screenPos.y - 0.5f) * 2;
         float max = Mathf.Max(Mathf.Abs(onScreenPos.x), Mathf.Abs(onScreenPos.y));
 
-        onScreenPos *= 0.8f;
+        // 0 to 1 along this vector represents a line from the player to the edge of the viewport.
+        // multiply by this to change how far the sprite appears from the viewport edge. lower is further.
+        onScreenPos *= 0.9f;
         onScreenPos = (onScreenPos / (max * 2)) + new Vector2(0.5f, 0.5f);
 
         Vector3 worldPos = Camera.main.ViewportToWorldPoint(onScreenPos);
+
+        // set the z or else it becomes -10 and invisible
         worldPos.z = 0;
 
         gameObject.transform.position = worldPos;
-        gameObject.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        // flip the rotation around because the sprite is supposed to be originating from the parent, so the angle is flipped
+        gameObject.transform.rotation = Quaternion.Euler(0, 0, angle - 180);
     }
 }
