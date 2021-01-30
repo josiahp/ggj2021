@@ -23,11 +23,9 @@ public class PlayerMovement : MonoBehaviour {
         mx = Input.GetAxisRaw("Horizontal");
         my = Input.GetAxisRaw("Vertical");
 
-        /*if (Mathf.Abs(mx) > 0.05f) {
-            anim.SetBool("isRunning", true);
-        } else {
-            anim.SetBool("isRunning", false);
-        } */
+        if (new Vector2(mx, my).magnitude > 0.05f) {
+            anim.SetTrigger("swimming");
+        }
         float k = isFacingRight ? 1f : -1f;
         float angle = Mathf.Atan2(my, k*mx) * Mathf.Rad2Deg;
         if (angle == 180) angle = 0;
@@ -35,6 +33,7 @@ public class PlayerMovement : MonoBehaviour {
         //Debug.Log(angle);
         //Debug.Log(k);
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        anim.rootRotation = Quaternion.AngleAxis(angle, Vector3.forward);
         if (mx > 0 && !isFacingRight) {
             Flip();
         } else if (mx < 0 && isFacingRight) {

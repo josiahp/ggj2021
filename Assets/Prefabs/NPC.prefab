@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7472938183909499004}
   - component: {fileID: -3182340493679026652}
   - component: {fileID: 7196983271907005869}
+  - component: {fileID: 2779425105982182349}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5289191147559218594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.50517, y: 18.352098, z: -66.56179}
+  m_LocalPosition: {x: 40, y: 15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,3 +149,22 @@ MonoBehaviour:
   animator: {fileID: 3708043810194044350, guid: d606f486c4bfc0140a72987c2fcf2461,
     type: 3}
   popUpText: {fileID: 0}
+--- !u!95 &2779425105982182349
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5289191147559218594}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
