@@ -8,6 +8,10 @@ TagManager:
   - Bullet
   - Enemy
   - NPC
+  - NPCSpawnPoint
+  - Mama
+  - MomSpawnPoint
+  - WinText
   layers:
   - Default
   - TransparentFX

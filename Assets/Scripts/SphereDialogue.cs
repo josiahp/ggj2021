@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SphereDialogue : MonoBehaviour
-{
-    public GameObject LevelManager;
+{    
     public string text;
+    public PopUpScript pop;
     private bool playerInRange = false;
     private bool poppedUp = false;
     void Update()
     {
         //Debug.Log("working?");
         if (playerInRange && !poppedUp) {
-            PopUpScript pop = LevelManager.GetComponent<PopUpScript>();
             pop.PopUp(text);
             poppedUp = true;
-        } 
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -35,7 +34,6 @@ public class SphereDialogue : MonoBehaviour
         if (other.tag == "Player") {
             playerInRange = false;
             if (poppedUp) {
-                PopUpScript pop = LevelManager.GetComponent<PopUpScript>();
                 pop.animator.SetTrigger("close");
             }
             poppedUp = false;

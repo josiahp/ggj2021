@@ -5,13 +5,8 @@ using UnityEngine;
 public class Echolocator : MonoBehaviour
 {
     public float Distance;
-    public float fireRate = 0.2f;
-    float timeUntilFire;
     public string lookFor;
     public GameObject locator;
-    public Collider2D cameraCollider;
-    public LayerMask layer;
-
     private Camera cam;
 
     public GameObject ping;

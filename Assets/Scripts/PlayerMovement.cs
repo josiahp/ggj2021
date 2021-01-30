@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     public float movementSpeed;
     public Rigidbody2D rb;
-    public PolygonCollider2D col;
+    public CapsuleCollider2D col;
 
     [HideInInspector] public bool isFacingRight = true;
     [HideInInspector] public bool isFacingUp = true;
