@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour {
     [HideInInspector] public bool isFacingUp = true;
 
     public Animator anim;
-
     public float jumpForce = 20f;
     public Transform feet;
     public Transform sides;
@@ -33,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
         float angle = Mathf.Atan2(my, k*mx) * Mathf.Rad2Deg;
         if (angle == 180) angle = 0;
         if (k < 0) angle = -angle;
-        Debug.Log(angle);
+        //Debug.Log(angle);
         //Debug.Log(k);
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         if (mx > 0 && !isFacingRight) {

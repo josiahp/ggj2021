@@ -12,7 +12,7 @@ public class TunaDialogue : MonoBehaviour
     {
         if (playerInRange) {
             PopUpScript pop = LevelManager.GetComponent<PopUpScript>();
-            pop.PopUp(text); 
+            pop.PopUp(text);
         }
     }
 
