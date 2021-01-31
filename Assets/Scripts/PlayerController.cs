@@ -40,7 +40,7 @@ public float Distance;
 
     private void Update()
     {
-        if (VoiceController.CanUseVoice() && pingTimeRemaining <= 0 && Input.GetMouseButtonDown(0))
+        if (VoiceController.CanUseVoice() && pingTimeRemaining <= 0 && (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Jump")))
         {
             VoiceController.UseVoice();
             locate();
