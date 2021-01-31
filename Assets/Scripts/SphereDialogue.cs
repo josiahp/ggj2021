@@ -37,7 +37,7 @@ public class SphereDialogue : MonoBehaviour
             if (!visited) {
                 npc = controller.randomNPC();
                 Vector3 vect = new Vector3(npc.transform.position.x - arrow.transform.position.x, npc.transform.position.y - arrow.transform.position.y, npc.transform.position.z - arrow.transform.position.z);
-                if (Mathf.Abs(vect.y) > 0.05f) {
+                if (!(Mathf.Abs(vect.y) > 0.05f && npc.transform.position.y > arrow.transform.position.y)) {
                     arrow.transform.up = vect;
                 }
                 visited = true;
