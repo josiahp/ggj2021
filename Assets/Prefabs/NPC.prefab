@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: hello
-  pop: {fileID: 7196983271907005869}
+  winText: {fileID: 7297128388863836941, guid: 385b9e0b62cbb564889426907a7f5520, type: 3}
 --- !u!114 &7196983271907005869
 MonoBehaviour:
   m_ObjectHideFlags: 0
