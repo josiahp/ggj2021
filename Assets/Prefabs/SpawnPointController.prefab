@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7269782550186806208}
   m_Layer: 0
   m_Name: SpawnPointController
-  m_TagString: Untagged
+  m_TagString: SpawnController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,3 +45,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCs: []
   mom: {fileID: 825072657048384664, guid: bbf039bb9867bc84aa2f1c7503f2ae81, type: 3}
+  untilMom: 0
+  worldNPCs: []
