@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.U2D;
 
@@ -26,6 +27,7 @@ public class SeaweedAnim : MonoBehaviour
         float x = (posStart.x + posStop.x) / 2;
         float z = (posStart.z + posStop.z) / 2;
         float step = (yTop - yBottom) / numSplines;
+        Debug.Log(step);
         spline.RemovePointAt(1);
         for (int i = 1; i < numSplines; i++) {
             spline.InsertPointAt(i, new Vector3(x, yBottom + i * step, z));

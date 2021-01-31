@@ -13,6 +13,8 @@ TagManager:
   - Mama
   - MomSpawnPoint
   - WinText
+  - HelpText
+  - SpawnController
   layers:
   - Default
   - TransparentFX

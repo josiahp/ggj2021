@@ -131,8 +131,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512754fa11cbfbb42889a99983753e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: hello
-  pop: {fileID: 4547168290327130040}
+  arrowObj: {fileID: 6153385293445522263, guid: f14f2487d4ed1884f81b3f1a54932d6c,
+    type: 3}
+  npc: {fileID: 0}
 --- !u!114 &4547168290327130040
 MonoBehaviour:
   m_ObjectHideFlags: 0

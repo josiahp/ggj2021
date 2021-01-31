@@ -4,40 +4,57 @@ using UnityEngine;
 
 public class SphereDialogue : MonoBehaviour
 {    
-    public string text;
-    public GameObject winText;
-    private bool playerInRange = false;
-    private bool poppedUp = false;
-    void Update()
+    public GameObject arrowObj;
+    private GameObject arrow;
+    public GameObject npc;
+    private SpawnController controller;
+    //private GameObject Text;
+    private bool visited = false;
+
+    private float angle;
+
+    void Start() {
+        GameObject g = GameObject.FindGameObjectWithTag("SpawnController");
+        controller = g.GetComponent<SpawnController>();
+        Vector3 arrowPos = new Vector3 (transform.position.x, transform.position.y + 2.0f, transform.position.z);
+        arrow = Instantiate(arrowObj, arrowPos, Quaternion.identity);
+        arrow.transform.parent = this.transform;
+        arrow.SetActive(false);
+    }
+
+    /*void Update()
     {
         //Debug.Log("working?");
         if (playerInRange && !poppedUp) {
             winText.SetActive(true);
             poppedUp = true;
         }
-    }
+    } */
 
     void OnTriggerEnter2D(Collider2D other) {
         //Debug.Log("Collision Detected "+other.gameObject.name);
         if (other.tag == "Player") {
-            playerInRange = true;
-            winText.SetActive(true);
+            if (!visited) {
+                npc = controller.randomNPC();
+                arrow.transform.up = new Vector3(npc.transform.position.x - arrow.transform.position.x, npc.transform.position.y - arrow.transform.position.y, npc.transform.position.z - arrow.transform.position.z);
+                visited = true;
+            }
+            //playerInRange = true;
+            arrow.SetActive(true);
+            Debug.Log(angle);
             //Debug.Log("player entered"); 
         }
-    }
-
-    public void popUp() {
-        poppedUp = false;
     }
 
     void OnTriggerExit2D(Collider2D other) {
         //Debug.Log("Collision Detected "+ other.gameObject.name);
         if (other.tag == "Player") {
-            playerInRange = false;
+            arrow.SetActive(false);
+            /*playerInRange = false;
             if (poppedUp) {
-                winText.SetActive(false);
+                winText.SetActive(true);
             }
-            poppedUp = false;
+            poppedUp = false; */
             //Debug.Log("player exited"); 
         }
     }
