@@ -56,23 +56,19 @@ public float Distance;
         mx = Input.GetAxisRaw("Horizontal");
         my = Input.GetAxisRaw("Vertical");
 
-        /*float k = isFacingRight ? 1f : -1f;
+        float k = isFacingRight ? 1f : -1f;
         float angle = Mathf.Atan2(my, k*mx) * Mathf.Rad2Deg;
         if (angle == 180) angle = 0;
-        if (k < 0) angle = -angle; */
-        Vector3 startPosition = transform.position;
-        Vector3 endPosition = new Vector3 (transform.position.x + mx * movementSpeed, transform.position.y + my * movementSpeed, transform.position.z);
-        Vector3 velocity = Vector3.Lerp(startPosition, endPosition, Time.deltaTime);
-        transform.position = velocity;
-        transform.forward = Vector3.Lerp(transform.forward, new Vector3(mx, my, 0), );
-        //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //anim.rootRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        /*Debug.Log(mx);
+        if (k < 0) angle = -angle;
+
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        anim.rootRotation = Quaternion.AngleAxis(angle, Vector3.forward);
+  
         if (mx > 0 && !isFacingRight) {
             Flip();
         } else if (mx < 0 && isFacingRight) {
             Flip();
-        } */
+        } 
     }
     public void locate()
     {

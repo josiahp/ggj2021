@@ -15,6 +15,8 @@ public class UIController : MonoBehaviour
     private float fadeTime;
     private float fadeTimeRemaining;
 
+    public GameObject WinText;
+
 
     void Start() {
         fadePanelImage = FadePanel.GetComponent<Image>();
@@ -74,6 +76,10 @@ public class UIController : MonoBehaviour
 
     public void ExitGame() {
         Application.Quit();
+    }
+
+    public void ShowWinText() {
+        WinText.SetActive(true);
     }
 }
 

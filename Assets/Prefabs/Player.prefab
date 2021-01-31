@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc2290eab5704040bce37379a311e5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Distance: 100
+  Distance: 30
   lookFor: NPC
   locator: {fileID: 6369237467666613395, guid: b3fe93349c696634aa8e51346bf346c4, type: 3}
   ping: {fileID: 7093363401470430871}
