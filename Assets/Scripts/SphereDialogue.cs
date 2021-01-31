@@ -36,7 +36,10 @@ public class SphereDialogue : MonoBehaviour
         if (other.tag == "Player") {
             if (!visited) {
                 npc = controller.randomNPC();
-                arrow.transform.up = new Vector3(npc.transform.position.x - arrow.transform.position.x, npc.transform.position.y - arrow.transform.position.y, npc.transform.position.z - arrow.transform.position.z);
+                Vector3 vect = new Vector3(npc.transform.position.x - arrow.transform.position.x, npc.transform.position.y - arrow.transform.position.y, npc.transform.position.z - arrow.transform.position.z);
+                if (Mathf.Abs(vect.y) > 0.05f) {
+                    arrow.transform.up = vect;
+                }
                 visited = true;
             }
             //playerInRange = true;
