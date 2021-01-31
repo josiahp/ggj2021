@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MamaController : MonoBehaviour
 {
-
-    private GameObject winText;
     private GameObject UIController;
     
     void Start() {
@@ -13,7 +11,6 @@ public class MamaController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D c) {
         if (c.gameObject.tag == "Player") {
-            winText.SetActive(true);
             UIController.GetComponent<UIController>().ShowWinText();
             StartCoroutine("PauseBeforeFadeOut");
         }

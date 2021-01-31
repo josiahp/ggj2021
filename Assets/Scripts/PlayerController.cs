@@ -28,6 +28,8 @@ public float Distance;
 
     private UIController UIController;
 
+    private AudioSource voice;
+
     public void Start()
     {
         cam = Camera.main;
@@ -37,6 +39,7 @@ public float Distance;
 
         VoiceController = VoiceNoteControllerObj.GetComponent<VoiceNoteController>();
         UIController = GameObject.Find("UIController").GetComponent<UIController>();
+        voice = gameObject.GetComponent<AudioSource>();
 
         rb = GetComponent<Rigidbody2D>();
     }
@@ -50,6 +53,7 @@ public float Distance;
         if (VoiceController.CanUseVoice() && pingTimeRemaining <= 0 && (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Jump")))
         {
             VoiceController.UseVoice();
+            voice.Play();
             locate();
         }
 
