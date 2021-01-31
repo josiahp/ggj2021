@@ -11,6 +11,17 @@ public class SpawnController : MonoBehaviour
     private GameObject worldMom;
     private GameObject[] worldNPCs;
 
+    private void Shuffle() {  
+        int n = NPCs.Length;  
+        while (n > 1) {  
+            n--;  
+            int k = Random.Range(0, n+1);
+            GameObject value = NPCs[k];  
+            NPCs[k] = NPCs[n];
+            NPCs[n] = value;  
+        }  
+    }
+
     void Start()
     {
         spawnPoints = GameObject.FindGameObjectsWithTag("NPCSpawnPoint");
@@ -33,7 +44,7 @@ public class SpawnController : MonoBehaviour
 
         worldNPCs = new GameObject[NPCs.Length];
         int i = 0;
-
+        Shuffle();
         foreach(GameObject NPC in NPCs) {
             int pos = Mathf.CeilToInt(Random.Range(0, npcPoints.Count - 1));
             worldNPCs[i] = Instantiate(NPC, npcPoints[pos].transform.position, Quaternion.identity);

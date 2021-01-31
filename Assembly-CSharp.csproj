@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\PowerUpController.cs" />
      <Compile Include="Assets\Scripts\Seaweed.cs" />
      <Compile Include="Assets\Scripts\SeaweedAnim.cs" />
+     <Compile Include="Assets\Scripts\SeaweedAnimAllPoints.cs" />
      <Compile Include="Assets\Scripts\SpawnController.cs" />
      <Compile Include="Assets\Scripts\SphereDialogue.cs" />
      <Compile Include="Assets\Scripts\TunaDialogue.cs" />

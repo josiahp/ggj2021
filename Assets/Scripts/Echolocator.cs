@@ -44,7 +44,7 @@ public class Echolocator : MonoBehaviour
         foreach (GameObject NPC in NPCs)
         {
             Vector2 vpPos = cam.WorldToViewportPoint(NPC.transform.position);
-            Debug.Log(vpPos);
+            //Debug.Log(vpPos);
             if ((vpPos.x <= 0 || vpPos.x >= 1 || vpPos.y <= 0 || vpPos.y >= 1) &&
                 Vector3.Distance(this.transform.position, NPC.transform.position) < Distance)
             {

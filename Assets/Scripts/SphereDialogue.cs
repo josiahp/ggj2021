@@ -5,14 +5,14 @@ using UnityEngine;
 public class SphereDialogue : MonoBehaviour
 {    
     public string text;
-    public PopUpScript pop;
+    public GameObject winText;
     private bool playerInRange = false;
     private bool poppedUp = false;
     void Update()
     {
         //Debug.Log("working?");
         if (playerInRange && !poppedUp) {
-            pop.PopUp(text);
+            winText.SetActive(true);
             poppedUp = true;
         }
     }
@@ -21,6 +21,7 @@ public class SphereDialogue : MonoBehaviour
         //Debug.Log("Collision Detected "+other.gameObject.name);
         if (other.tag == "Player") {
             playerInRange = true;
+            winText.SetActive(true);
             //Debug.Log("player entered"); 
         }
     }
@@ -34,7 +35,7 @@ public class SphereDialogue : MonoBehaviour
         if (other.tag == "Player") {
             playerInRange = false;
             if (poppedUp) {
-                pop.animator.SetTrigger("close");
+                winText.SetActive(false);
             }
             poppedUp = false;
             //Debug.Log("player exited"); 
