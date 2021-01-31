@@ -67,23 +67,11 @@ public float Distance;
         mx = Input.GetAxisRaw("Horizontal");
         my = Input.GetAxisRaw("Vertical");
 
-        /*float k = isFacingRight ? 1f : -1f;
-        float angle = Mathf.Atan2(my, k*mx) * Mathf.Rad2Deg;
-        if (angle == 180) angle = 0;
-        if (k < 0) angle = -angle; */
         Vector3 startPosition = transform.position;
         Vector3 endPosition = new Vector3 (transform.position.x + mx * movementSpeed, transform.position.y + my * movementSpeed, transform.position.z);
         Vector3 velocity = Vector3.Lerp(startPosition, endPosition, Time.deltaTime);
         transform.position = velocity;
         if (mx != 0 || my != 0) transform.right = Vector3.Lerp(transform.right, new Vector3(mx, my, 0), movementSpeed * Time.deltaTime);
-        //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        //anim.rootRotation = Quaternion.AngleAxis(angle, Vector3.forward);
-        /*Debug.Log(mx);
-        if (mx > 0 && !isFacingRight) {
-            Flip();
-        } else if (mx < 0 && isFacingRight) {
-            Flip();
-        } */
     }
     public void locate()
     {
@@ -119,11 +107,6 @@ public float Distance;
 		theScale.x *= -1;
 		transform.localScale = theScale;
     }
-
-    /*private void FixedUpdate() {
-        Vector2 movement = new Vector2(mx * movementSpeed, my * movementSpeed);
-        rb.velocity = movement;
-    } */
 
     void OnTriggerEnter2D(Collider2D c) {
         if (c.gameObject.tag == "PowerUp") {
