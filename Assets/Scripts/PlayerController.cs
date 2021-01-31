@@ -26,6 +26,8 @@ public float Distance;
     private float mx;
     private float my;
 
+    private UIController UIController;
+
     public void Start()
     {
         cam = Camera.main;
@@ -34,12 +36,17 @@ public float Distance;
         ping.SetActive(false);
 
         VoiceController = VoiceNoteControllerObj.GetComponent<VoiceNoteController>();
+        UIController = GameObject.Find("UIController").GetComponent<UIController>();
 
         rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
+        if (Input.GetButtonDown("Cancel")) {
+            UIController.FadeOutToEnd(1);
+        }
+        
         if (VoiceController.CanUseVoice() && pingTimeRemaining <= 0 && (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Jump")))
         {
             VoiceController.UseVoice();
