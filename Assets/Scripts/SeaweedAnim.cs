@@ -46,8 +46,7 @@ public class SeaweedAnim : MonoBehaviour
             spline.RemovePointAt(i);
             spline.InsertPointAt(i, new Vector3(pos.x + k * speed, pos.y + k * speed/10, pos.z));
             if (i == 1) {
-                totalMove += Mathf.Abs(k*speed); 
-                Debug.Log(totalMove);    
+                totalMove += Mathf.Abs(k*speed);   
             }
             k = -k;
             spline.SetTangentMode(i, ShapeTangentMode.Continuous);
