@@ -814,34 +814,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
         type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
-        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1806913122}
     - target: {fileID: 2326170484511693470, guid: c66df8213adbeff40a12bb811ad69d12,
         type: 3}
       propertyPath: m_Sprite
