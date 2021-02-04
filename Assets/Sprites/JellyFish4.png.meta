@@ -102,12 +102,12 @@ TextureImporter:
       name: JellyFish4_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 49
-        width: 175
-        height: 137
+        x: 30
+        y: 45
+        width: 200
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -123,12 +123,12 @@ TextureImporter:
       name: JellyFish4_1
       rect:
         serializedVersion: 2
-        x: 267
-        y: 49
-        width: 177
-        height: 137
+        x: 258
+        y: 45
+        width: 200
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: JellyFish4_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 48
-        width: 175
-        height: 137
+        x: 501
+        y: 45
+        width: 200
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: JellyFish4_3
       rect:
         serializedVersion: 2
-        x: 763
-        y: 47
-        width: 162
-        height: 137
+        x: 745
+        y: 45
+        width: 200
+        height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
