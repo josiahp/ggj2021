@@ -102,12 +102,12 @@ TextureImporter:
       name: Seahorse2_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 43
-        width: 95
-        height: 171
+        x: 50
+        y: 10
+        width: 130
+        height: 230
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -123,12 +123,12 @@ TextureImporter:
       name: Seahorse2_1
       rect:
         serializedVersion: 2
-        x: 296
-        y: 20
-        width: 99
-        height: 190
+        x: 288
+        y: 10
+        width: 130
+        height: 230
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: Seahorse2_2
       rect:
         serializedVersion: 2
-        x: 534
-        y: 19
-        width: 102
-        height: 198
+        x: 525
+        y: 10
+        width: 130
+        height: 230
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Seahorse2_3
       rect:
         serializedVersion: 2
-        x: 772
-        y: 19
-        width: 101
-        height: 212
+        x: 762
+        y: 10
+        width: 130
+        height: 230
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

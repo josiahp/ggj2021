@@ -102,12 +102,12 @@ TextureImporter:
       name: Whale2_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 461
-        width: 353
-        height: 71
+        x: 40
+        y: 442
+        width: 390
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -123,12 +123,12 @@ TextureImporter:
       name: Whale2_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 331
-        width: 349
-        height: 74
+        x: 39
+        y: 315
+        width: 390
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,12 +144,12 @@ TextureImporter:
       name: Whale2_2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 182
-        width: 350
-        height: 77
+        x: 40
+        y: 164
+        width: 390
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Whale2_3
       rect:
         serializedVersion: 2
-        x: 44
-        y: 44
-        width: 350
-        height: 89
+        x: 40
+        y: 25
+        width: 390
+        height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
