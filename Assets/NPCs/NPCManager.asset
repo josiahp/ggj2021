@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 90e9ccd622e14fc48a8cb79370a455aa, type: 2}
   - {fileID: 11400000, guid: 7e03d92e0135693419e12679d50ac36a, type: 2}
   - {fileID: 11400000, guid: 7660e2ce5ca704b4b96d043d63916f4f, type: 2}
+  - {fileID: 11400000, guid: 8db1cc2e85755b24987cde080a18f86e, type: 2}
   spawnPoints:
   - {x: 9.947443, y: 22.478783, z: 0}
   - {x: 41.469482, y: 8.397247, z: 0}

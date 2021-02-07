@@ -4,13 +4,13 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -7515459773506550610
-    second: octopus2_0
+    second: Octopus_0
   - first:
       213: 1684228125188383430
-    second: octopus2_1
+    second: Octopus_1
   - first:
       213: -2791851872650378183
-    second: octopus2_2
+    second: Octopus_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,7 +96,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: octopus2_0
+      name: Octopus_0
       rect:
         serializedVersion: 2
         x: 35
@@ -104,7 +104,7 @@ TextureImporter:
         width: 220
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -117,7 +117,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: octopus2_1
+      name: Octopus_1
       rect:
         serializedVersion: 2
         x: 362
@@ -125,7 +125,7 @@ TextureImporter:
         width: 220
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: octopus2_2
+      name: Octopus_2
       rect:
         serializedVersion: 2
         x: 710
@@ -146,7 +146,7 @@ TextureImporter:
         width: 220
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
