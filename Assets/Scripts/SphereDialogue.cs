@@ -6,59 +6,43 @@ public class SphereDialogue : MonoBehaviour
 {    
     public GameObject arrowObj;
     private GameObject arrow;
-    public GameObject npc;
-    private SpawnController controller;
-    //private GameObject Text;
+    private GameObject npc;
     private bool visited = false;
 
     private float angle;
 
+    public NPCManager npcManager;
+    public NPCManager mamaManager;
+
     void Start() {
-        GameObject g = GameObject.FindGameObjectWithTag("SpawnController");
-        controller = g.GetComponent<SpawnController>();
         Vector3 arrowPos = new Vector3 (transform.position.x, transform.position.y + 2.0f, transform.position.z);
         arrow = Instantiate(arrowObj, arrowPos, Quaternion.identity);
-        arrow.transform.parent = this.transform;
+        arrow.transform.parent = transform;
         arrow.SetActive(false);
     }
 
-    /*void Update()
-    {
-        //Debug.Log("working?");
-        if (playerInRange && !poppedUp) {
-            winText.SetActive(true);
-            poppedUp = true;
-        }
-    } */
-
     void OnTriggerEnter2D(Collider2D other) {
-        //Debug.Log("Collision Detected "+other.gameObject.name);
         if (other.tag == "Player") {
             if (!visited) {
-                npc = controller.randomNPC();
+                // 20% of the time we point to an NPC. The rest of the time we point to Mama.
+                if (Random.Range(0, 1) <= 0.2f) {
+                    npc = npcManager.GetRandomNPC();
+                } else {
+                    npc = mamaManager.GetRandomNPC();
+                }
                 Vector3 vect = new Vector3(npc.transform.position.x - arrow.transform.position.x, npc.transform.position.y - arrow.transform.position.y, npc.transform.position.z - arrow.transform.position.z);
                 if (Mathf.Abs(vect.y) > 0.05f) {
                     arrow.transform.up = vect;
                 }
                 visited = true;
             }
-            //playerInRange = true;
             arrow.SetActive(true);
-            Debug.Log(angle);
-            //Debug.Log("player entered"); 
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        //Debug.Log("Collision Detected "+ other.gameObject.name);
         if (other.tag == "Player") {
             arrow.SetActive(false);
-            /*playerInRange = false;
-            if (poppedUp) {
-                winText.SetActive(true);
-            }
-            poppedUp = false; */
-            //Debug.Log("player exited"); 
         }
     }
 }

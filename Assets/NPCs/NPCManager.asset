@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb059ffaa68f0b14d86f6afff620b087, type: 3}
+  m_Name: NPCManager
+  m_EditorClassIdentifier: 
+  npcDefinitions:
+  - {fileID: 11400000, guid: e4091ca7f0e32ef4d8e88232d329eb38, type: 2}
+  - {fileID: 11400000, guid: a719fa9c508c12148aec2e00b5bc4335, type: 2}
+  - {fileID: 11400000, guid: 2e356aa7245f0a440ab8d1d186c83f50, type: 2}
+  - {fileID: 11400000, guid: 1caa558f555f8b64bb2e4c462ef3feed, type: 2}
+  - {fileID: 11400000, guid: 90e9ccd622e14fc48a8cb79370a455aa, type: 2}
+  - {fileID: 11400000, guid: 7e03d92e0135693419e12679d50ac36a, type: 2}
+  - {fileID: 11400000, guid: 7660e2ce5ca704b4b96d043d63916f4f, type: 2}
+  spawnPoints:
+  - {x: 9.947443, y: 22.478783, z: 0}
+  - {x: 41.469482, y: 8.397247, z: 0}
+  - {x: 100.12102, y: 2.0670166, z: 0}
+  - {x: 59.297485, y: 39.531662, z: 0}
+  - {x: 14.339898, y: 51.416992, z: 0}
+  - {x: 141.33217, y: 47.799717, z: 0}
+  - {x: 42.761395, y: 60.460472, z: 0}
+  - {x: 106.709694, y: 37.33571, z: 0}
+  - {x: 120.01612, y: 61.106415, z: 0}
+  - {x: 117.561676, y: 14.856705, z: 0}
+  limit: 8
