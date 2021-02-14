@@ -29,6 +29,7 @@ public class SeaweedAnim : MonoBehaviour
         float step = (yTop - yBottom) / numSplines;
 
         spline.RemovePointAt(1);
+        try {
         for (int i = 1; i < numSplines; i++) {
             spline.InsertPointAt(i, new Vector3(x, yBottom + i * step, z));
         }
@@ -40,7 +41,11 @@ public class SeaweedAnim : MonoBehaviour
             Debug.Log(startPos[i]);
             Debug.Log(endPos[i]);
         } */
-        spriteShapeController.RefreshSpriteShape();
+        } catch (ArgumentException e) {
+            Debug.LogWarning("Attempted to insert too many points");
+        } finally {
+            spriteShapeController.RefreshSpriteShape();
+        }
     }
     void Update() {
         SetSpline();
