@@ -77,10 +77,10 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 0e16da69624f3db4b8df467fc04d723b, type: 3}
+  - {fileID: 21300000, guid: b54c32a0d21de824190448c0a003bc06, type: 3}
   m_LocalAABB:
-    m_Center: {x: -1.3200002, y: 8.097396, z: -0.00005}
-    m_Extent: {x: 1.3200002, y: 10.097675, z: 0.00005}
+    m_Center: {x: -1.5004367, y: 8.097395, z: -0.00005}
+    m_Extent: {x: 1.5004367, y: 12.097832, z: 0.00005}
 --- !u!114 &8603653646791098093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
   m_SpriteShape: {fileID: 11400000, guid: ae1eefae94b45d24c8e800430ec6bc8f, type: 2}
-  m_FillPixelPerUnit: 100
+  m_FillPixelPerUnit: 64
   m_StretchTiling: 1
   m_SplineDetail: 16
   m_AdaptiveUV: 1
@@ -145,3 +145,4 @@ MonoBehaviour:
   speed: 0.0005
   maxMovement: 0.2
   numSplines: 8
+  tangentLength: 1
