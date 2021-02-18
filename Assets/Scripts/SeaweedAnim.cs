@@ -41,7 +41,7 @@ public class SeaweedAnim : MonoBehaviour
             Debug.Log(startPos[i]);
             Debug.Log(endPos[i]);
         } */
-        } catch (ArgumentException e) {
+        } catch (ArgumentException) {
             Debug.LogWarning("Attempted to insert too many points");
         } finally {
             spriteShapeController.RefreshSpriteShape();
