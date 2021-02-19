@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7142347256205705619}
   - component: {fileID: 797324110071566020}
   - component: {fileID: 4572158078805405852}
-  - component: {fileID: 5347778037353397621}
+  - component: {fileID: 1565838547862886609}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: Mama
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
     type: 3}
   npcManager: {fileID: 11400000, guid: dfe4b4942be44c24e95b1b227ccc98b9, type: 2}
   mamaManager: {fileID: 11400000, guid: 672ec947e66051a4d9e47c9429140d0c, type: 2}
---- !u!95 &5347778037353397621
+--- !u!95 &1565838547862886609
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0

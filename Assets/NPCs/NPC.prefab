@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7142347256205705619}
   - component: {fileID: 797324110071566020}
   - component: {fileID: 4572158078805405852}
-  - component: {fileID: 5347778037353397621}
+  - component: {fileID: 669817511754237789}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -133,22 +133,18 @@ MonoBehaviour:
     type: 3}
   npcManager: {fileID: 11400000, guid: dfe4b4942be44c24e95b1b227ccc98b9, type: 2}
   mamaManager: {fileID: 11400000, guid: 672ec947e66051a4d9e47c9429140d0c, type: 2}
---- !u!95 &5347778037353397621
-Animator:
-  serializedVersion: 3
+--- !u!111 &669817511754237789
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2721129589008171802}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

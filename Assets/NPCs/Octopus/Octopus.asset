@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Octopus
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
+  Prefab: {fileID: 6958685098851384283, guid: 1c8bca25c03e5b642abc3e4674c0f408, type: 3}
   Sprite: {fileID: -7515459773506550610, guid: abfe855561be32344b3d4fc4878c30da, type: 3}
   Scale: 1
-  AnimatorController: {fileID: 9100000, guid: 8d666155616a6614b8a0b4fe3ae3d3d8, type: 2}
+  AnimationClip: {fileID: 7400000, guid: 94233a83050b7424ab3a11dfb3efd68d, type: 2}

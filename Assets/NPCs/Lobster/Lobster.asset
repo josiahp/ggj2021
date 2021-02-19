@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
   Sprite: {fileID: -7831442385738772218, guid: 2834a733f7a5aee419d90c9cbc0f7473, type: 3}
-  AnimatorController: {fileID: 9100000, guid: f94b0c3234f4b3d42993dda7f4fc587b, type: 2}
+  Scale: 1
+  AnimationClip: {fileID: 7400000, guid: 9ea12e09bd92a4d4c89ff9d3ca238911, type: 2}

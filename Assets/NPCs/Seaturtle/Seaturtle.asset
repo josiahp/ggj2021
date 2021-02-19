@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Seaturtle
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
+  Prefab: {fileID: 8588887243323027960, guid: 41d57e77b144a964d936ae6f80f6df86, type: 3}
   Sprite: {fileID: 2406088706704605285, guid: e07a019914cdbd54fb6d55492d95cf46, type: 3}
-  AnimatorController: {fileID: 9100000, guid: 968f2f794786bdf429e06a701e2698bb, type: 2}
+  Scale: 1
+  AnimationClip: {fileID: 7400000, guid: 1ed1ea994d12baa4c9d1e2089ae8012c, type: 2}

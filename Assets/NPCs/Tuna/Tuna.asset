@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Tuna
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
+  Prefab: {fileID: 2278578519388437177, guid: bd844d18b3dfa8e4ea15a63bf8c54744, type: 3}
   Sprite: {fileID: -161158373581349134, guid: be091e0403c9bbf49a621b3ca527d965, type: 3}
-  AnimatorController: {fileID: 9100000, guid: 1dba482770defb74a80743ed613735bb, type: 2}
+  Scale: 1
+  AnimationClip: {fileID: 7400000, guid: 4619afe1adb73254e866982b739f0d5e, type: 2}

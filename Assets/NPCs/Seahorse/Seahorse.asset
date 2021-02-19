@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Seahorse
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
+  Prefab: {fileID: 3667590812928968414, guid: 025ccd47460097645b12ae7e54db100c, type: 3}
   Sprite: {fileID: -4764574261088400150, guid: acec2df8e8be4b640915c99aba7c00a1, type: 3}
-  AnimatorController: {fileID: 9100000, guid: 51644b1082c43ad4398a31fb53b21e2e, type: 2}
+  Scale: 1
+  AnimationClip: {fileID: 7400000, guid: 785a8cdbca8b2aa46b2769d88f99205c, type: 2}

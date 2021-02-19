@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Jellyfish
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
+  Prefab: {fileID: 3361261025718723783, guid: ade6a1c4965a4f549a5ce92498ea9be4, type: 3}
   Sprite: {fileID: 704480463433482619, guid: da632e8fb09da7d4ab37387c76b35331, type: 3}
-  AnimatorController: {fileID: 9100000, guid: 00a8c90b27016f84dabab53b8acd79dd, type: 2}
+  Scale: 1
+  AnimationClip: {fileID: 7400000, guid: 69351de9c8c3bf34da885dc431189618, type: 2}

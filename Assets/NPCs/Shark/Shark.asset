@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Shark
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
+  Prefab: {fileID: 4978204147961445329, guid: f594c4a2e58166542bad43d376008075, type: 3}
   Sprite: {fileID: -2894948067056343143, guid: b9b18c61d32309a4c94dab824d116e80, type: 3}
   Scale: 1
-  AnimatorController: {fileID: 0}
+  AnimationClip: {fileID: 7400000, guid: 656bc21d3c2417d41b3b40666ef451f8, type: 2}
