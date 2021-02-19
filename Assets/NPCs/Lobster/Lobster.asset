@@ -12,7 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf703e7a4cb7aeb4891d126a037d76ca, type: 3}
   m_Name: Lobster
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 2721129589008171802, guid: bf96eae2b2556924490abc065dea63aa, type: 3}
-  Sprite: {fileID: -7831442385738772218, guid: 2834a733f7a5aee419d90c9cbc0f7473, type: 3}
-  Scale: 1
-  AnimationClip: {fileID: 7400000, guid: 9ea12e09bd92a4d4c89ff9d3ca238911, type: 2}
+  Prefab: {fileID: 8016745459677415049, guid: 795dbafa721ae774380161c659aaa888, type: 3}

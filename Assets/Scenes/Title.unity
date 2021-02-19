@@ -804,6 +804,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2326170484048117963, guid: c66df8213adbeff40a12bb811ad69d12,
         type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484048117963, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484048117963, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484048117963, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
       propertyPath: m_ReferencePixelsPerUnit
       value: 100
       objectReference: {fileID: 0}
@@ -811,6 +826,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TitleCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484172294208, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484172294210, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484172294210, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484172294210, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484172294210, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 301.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170484172294210, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -233
       objectReference: {fileID: 0}
     - target: {fileID: 2326170484172294239, guid: c66df8213adbeff40a12bb811ad69d12,
         type: 3}
@@ -902,6 +947,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170485021630095, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170485021630192, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 240
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170485021630192, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170485021630192, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170485021630192, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 301.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326170485021630192, guid: c66df8213adbeff40a12bb811ad69d12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -32.325
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c66df8213adbeff40a12bb811ad69d12, type: 3}
