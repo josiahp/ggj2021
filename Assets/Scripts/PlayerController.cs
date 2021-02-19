@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-public float Distance;
+    public float Distance;
     public string lookFor;
     public GameObject locator;
 
@@ -20,7 +20,7 @@ public float Distance;
     private Animator anim;
     public float movementSpeed;
     private Rigidbody2D rb;
- 
+
     private bool isFacingRight = true;
 
     private float mx;
@@ -46,10 +46,11 @@ public float Distance;
 
     private void Update()
     {
-        if (Input.GetButtonDown("Cancel")) {
+        if (Input.GetButtonDown("Cancel"))
+        {
             UIController.FadeOutToEnd(1);
         }
-        
+
         if (VoiceController.CanUseVoice() && pingTimeRemaining <= 0 && (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Jump")))
         {
             VoiceController.UseVoice();
@@ -57,9 +58,12 @@ public float Distance;
             locate();
         }
 
-        if (pingTimeRemaining <= 0) {
+        if (pingTimeRemaining <= 0)
+        {
             ping.SetActive(false);
-        } else {
+        }
+        else
+        {
             pingSprite.color = new Color(1f, 1f, 1f, easeOutCubic(pingTimeRemaining / pingDuration));
             pingTimeRemaining -= Time.deltaTime;
         }
@@ -67,11 +71,16 @@ public float Distance;
         mx = Input.GetAxisRaw("Horizontal");
         my = Input.GetAxisRaw("Vertical");
 
-        Vector3 startPosition = transform.position;
-        Vector3 endPosition = new Vector3 (transform.position.x + mx * movementSpeed, transform.position.y + my * movementSpeed, transform.position.z);
-        Vector3 velocity = Vector3.Lerp(startPosition, endPosition, Time.deltaTime);
-        transform.position = velocity;
-        if (mx != 0 || my != 0) transform.right = Vector3.Lerp(transform.right, new Vector3(mx, my, 0), movementSpeed * Time.deltaTime);
+        if (mx != 0 || my != 0)
+        {
+            Vector3 startPosition = transform.position;
+            Vector3 endPosition = new Vector3(transform.position.x + mx * movementSpeed, transform.position.y + my * movementSpeed, transform.position.z);
+            Vector3 velocity = Vector3.Lerp(startPosition, endPosition, Time.deltaTime);
+            transform.position = velocity;
+            var moveDirection = endPosition - startPosition;
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.AngleAxis(angle, Vector3.forward), Time.deltaTime * 5f);
+        }
     }
     public void locate()
     {
@@ -96,20 +105,23 @@ public float Distance;
         ping.transform.parent = NPC.transform;
     }
 
-    float easeOutCubic(float i) {
+    float easeOutCubic(float i)
+    {
         return 1 - Mathf.Pow(1 - i, 3);
     }
-  
+
     private void Flip()
-	{
-	    isFacingRight = !isFacingRight;
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 
-    void OnTriggerEnter2D(Collider2D c) {
-        if (c.gameObject.tag == "PowerUp") {
+    void OnTriggerEnter2D(Collider2D c)
+    {
+        if (c.gameObject.tag == "PowerUp")
+        {
             VoiceController.RecoverVoice();
         }
     }
