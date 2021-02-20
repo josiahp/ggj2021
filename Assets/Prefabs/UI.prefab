@@ -1172,6 +1172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadePanel: {fileID: 7851273157459667944}
+  FadeInAtStart: 0
+  FadeInSeconds: 1.5
+  WinText: {fileID: 0}
 --- !u!1001 &2146435184364646618
 PrefabInstance:
   m_ObjectHideFlags: 0

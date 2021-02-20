@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteShapeController: {fileID: 8603653646791098093}
-  speed: 0.0005
+  speed: 0.0008
   maxMovement: 0.2
   numSplines: 8
   tangentLength: 1

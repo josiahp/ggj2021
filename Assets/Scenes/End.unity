@@ -740,6 +740,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8027935936338762471, guid: a61e5f0800c094348bee74a63f1da762,
+        type: 3}
+      propertyPath: FadeInSeconds
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9188543000080352984, guid: a61e5f0800c094348bee74a63f1da762,
         type: 3}
       propertyPath: m_PixelPerfect
@@ -863,7 +868,7 @@ PrefabInstance:
     - target: {fileID: 9188543000080352989, guid: a61e5f0800c094348bee74a63f1da762,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a61e5f0800c094348bee74a63f1da762, type: 3}
