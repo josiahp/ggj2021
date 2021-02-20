@@ -47,7 +47,7 @@ public class SeaweedAnim : MonoBehaviour
             spriteShapeController.RefreshSpriteShape();
         }
     }
-    void Update() {
+    void FixedUpdate() {
         SetSpline();
     }
 

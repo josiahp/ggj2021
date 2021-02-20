@@ -18,7 +18,14 @@ public class PowerUpController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D c) {
         if (c.gameObject.tag == "Player") {
-            Destroy(gameObject);
+            StartCoroutine(ReactAndDestroy());
         }
+    }
+
+    IEnumerator ReactAndDestroy() {
+        GetComponent<ParticleSystem>().Play();
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(0.25f);
+        Destroy(gameObject);
     }
 }
