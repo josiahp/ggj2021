@@ -18,7 +18,8 @@ public class SeaweedAnim : MonoBehaviour
     private Vector3[] endPos;
 
     // Update is called once per frame
-    void Start() {
+    void Start()
+    {
         Spline spline = spriteShapeController.spline;
         Vector3 posStart = spline.GetPosition(0);
         Vector3 posStop = spline.GetPosition(1);
@@ -29,41 +30,44 @@ public class SeaweedAnim : MonoBehaviour
         float step = (yTop - yBottom) / numSplines;
 
         spline.RemovePointAt(1);
-        try {
-        for (int i = 1; i < numSplines; i++) {
-            spline.InsertPointAt(i, new Vector3(x, yBottom + i * step, z));
+        try
+        {
+            for (int i = 1; i < numSplines; i++)
+            {
+                spline.InsertPointAt(i, new Vector3(x, yBottom + i * step, z));
+            }
         }
-        spline.InsertPointAt(numSplines, posStop);
-        /*for (int i = 0; i <= numSplines; i++) {
-            Vector3 pos = spline.GetPosition(i);
-            startPos[i] = new Vector3(pos.x - maxMovement, pos.y, pos.z);
-            endPos[i] = new Vector3(pos.x + maxMovement, pos.y, pos.z);
-            Debug.Log(startPos[i]);
-            Debug.Log(endPos[i]);
-        } */
-        } catch (ArgumentException) {
+        catch (ArgumentException)
+        {
             Debug.LogWarning("Attempted to insert too many points");
-        } finally {
+        }
+        finally
+        {
             spriteShapeController.RefreshSpriteShape();
         }
     }
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         SetSpline();
     }
 
-    void SetSpline() {
+    void SetSpline()
+    {
         Spline spline = spriteShapeController.spline;
-        if (totalMove >= maxMovement) {
-                totalMove = 0f;
-                k = -k;
-            }
-        for (int i = 1; i < spline.GetPointCount(); i++) {
+        if (totalMove >= maxMovement)
+        {
+            totalMove = 0f;
+            k = -k;
+        }
+        for (int i = 1; i < spline.GetPointCount(); i++)
+        {
             Vector3 pos = spline.GetPosition(i);
             spline.RemovePointAt(i);
-            Vector3 newPos = new Vector3(pos.x + k * speed, pos.y + k * speed/10, pos.z);
+            Vector3 newPos = new Vector3(pos.x + k * speed, pos.y + k * speed / 10, pos.z);
             spline.InsertPointAt(i, newPos);
-            if (i == 1) {
-                totalMove += Mathf.Abs(k*speed); 
+            if (i == 1)
+            {
+                totalMove += Mathf.Abs(k * speed);
                 //Debug.Log(totalMove);    
             }
             //float rotation = (k > 0) ? 30f : -30f;
