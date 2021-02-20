@@ -27,8 +27,12 @@ public class SchoolOfFish : MonoBehaviour
             triggerIndex = triggerIndex % triggers.Length;
             trigger = triggers[triggerIndex];
             startFromChild = UnityEngine.Random.Range(0, transform.childCount-1);
-            yield return new WaitForSeconds(interval);
+            yield return new WaitForSeconds(randomInterval(interval));
         }
+    }
+
+    float randomInterval(float interval) {
+        return UnityEngine.Random.Range(interval * 0.5f, interval + (interval * 0.5f));
     }
 
 }
