@@ -178,12 +178,12 @@ PrefabInstance:
     - target: {fileID: 4579159026473785921, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -130
+      value: -77.7
       objectReference: {fileID: 0}
     - target: {fileID: 4579159026473785921, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 135
+      value: 98.9
       objectReference: {fileID: 0}
     - target: {fileID: 4579159026473785932, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
@@ -328,17 +328,32 @@ PrefabInstance:
     - target: {fileID: 4579159027313773190, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 118
+      value: 170.30002
       objectReference: {fileID: 0}
     - target: {fileID: 4579159027313773190, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 135
+      value: 98.899994
       objectReference: {fileID: 0}
     - target: {fileID: 4579159028448872259, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
       propertyPath: m_Name
       value: ClearCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579159028448872269, guid: 8c5d02cd344040c46b936175f10d24a2,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579159028448872269, guid: 8c5d02cd344040c46b936175f10d24a2,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579159028448872269, guid: 8c5d02cd344040c46b936175f10d24a2,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 720
       objectReference: {fileID: 0}
     - target: {fileID: 4579159028448872271, guid: 8c5d02cd344040c46b936175f10d24a2,
         type: 3}
@@ -868,7 +883,7 @@ PrefabInstance:
     - target: {fileID: 9188543000080352989, guid: a61e5f0800c094348bee74a63f1da762,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a61e5f0800c094348bee74a63f1da762, type: 3}
